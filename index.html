@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hotel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/framework7.ios.min.css" rel="stylesheet">
+<link href="css/framework7.md.css" rel="stylesheet">
+<link href="css/material-icons.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="color-theme-black">
+
+    
+     <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+     <section class="panel panel-left">
+     	<article class="text-align-center panel-logo">
+     		<img src="img/logo.png" class="img-responsive" width="120">
+     	</article>
+     	
+     	<article>
+     		<div class="list no-margin-top ">
+     			<ul>
+     				<li>
+     					<a href="#" class="item-link item-content">
+     						<div class="item-media">
+     							<i class="material-icons">info</i>
+     						</div>
+     						<div class="item-inner">
+     							Información del Hotel
+     						</div>
+     					</a>
+     				</li>
+     				<li>
+     					<a href="#" class="item-link item-content">
+     						<div class="item-media">
+     							<i class="material-icons">notifications</i>
+     						</div>
+     						<div class="item-inner">
+     							Habitaciones
+     						</div>
+     					</a>
+     				</li>
+     				<li>
+     					<a href="#" class="item-link item-content">
+     						<div class="item-media">
+     							<i class="material-icons">lens</i>
+     						</div>
+     						<div class="item-inner">
+     							Restaurantes y bares
+     						</div>
+     					</a>
+     				</li>	
+     				<li>
+     					<a href="#" class="item-link item-content">
+     						<div class="item-media">
+     							<i class="material-icons">local_offer</i>
+     						</div>
+     						<div class="item-inner">
+     							Ofertas Especiales
+     						</div>
+     					</a>
+     				</li>
+     				<li>
+     					<a href="#" class="item-link item-content">
+     						<div class="item-media">
+     							<i class="material-icons">developer_mode</i>
+     						</div>
+     						<div class="item-inner">
+     							Acerca de la aplicación
+     						</div>
+     					</a>
+     				</li>
+     			</ul>
+     		</div>
+     		
+     	</article>
+     </section>
+     
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main view-init">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Grand Hotel</div>
+              <div class="right">
+              <a href="#" class="link panel-open" data-panel="left">
+              	
+              
+              	<i class="icon material-icons">menu</i>
+              	</a>
+              	
+              	<a href="#" class="link searchbar-enable" data-searchbar=".searchbar">
+              	<i class="icon material-icons">search</i>
+              	</a>
+              </div>
+              
+              <form class="searchbar searchbar-expandable searchbar-init" data-search-container=".lista-habitaciones" data-search-in=".item-inner">
+        <div class="searchbar-inner">
+          <div class="searchbar-input-wrap">
+            <input type="search" placeholder="Search"/>
+            <i class="searchbar-icon"></i>
+            <span class="input-clear-button"></span>
+          </div>
+          <span class="searchbar-disable-button">Cancel</span>
+        </div>
+      </form>
+              
+              
+              <!--<div class="subnavbar">
+         Searchbar with auto init 
+        <form class="searchbar searchbar-init" data-search-container=".lista-habitaciones" data-search-in=".item-text">
+          <div class="searchbar-inner">
+            <div class="searchbar-input-wrap">
+              <input type="search" placeholder="Buscar">
+              <i class="searchbar-icon"></i>
+              <span class="input-clear-button"></span>
+            </div>
+            <span class="searchbar-disable-button">Cancel</span>
+          </div>
+        </form>
+      </div>-->
+              
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <section class="page-content">
+        
+          <div class="list lista-habitaciones">
+        	
+        	<ul>
+        		<li class="item-content">
+        		 <div class="item-inner">
+        		 	 <div class="item-title">
+        		 	  Habitación Sencilla
+        		 	 </div>
+        		 	 <div class="item-text">
+        		 	 	Incluye cama matrimonial, baño privado, aire acondicionado y servicio a la habitación.
+        		 	 </div>
+        		 </div>
+        			
+        		</li>
+        		
+        		 <li class="item-content">
+        		 <div class="item-inner">
+        		 	 <div class="item-title">
+        		 	  Habitación Doble
+        		 	 </div>
+        		 	 <div class="item-text">
+        		 	 	Incluye dos camas matrimoniales, baño privado, aire acondicionado y servicio a la habitación.
+        		 	 </div>
+        		 </div>
+        			
+        		</li>
+        		
+        		 <li class="item-content">
+        		 <div class="item-inner">
+        		 	 <div class="item-title">
+        		 	  Habitación Sencilla
+        		 	 </div>
+        		 	 <div class="item-text">
+        		 	 	Incluye tres camas matrimoniales, dos baños privados, aire acondicionado y servicio a la habitación.
+        		 	 </div>
+        		 </div>
+        			
+        		</li>
+        		
+        	</ul>
+        
+          </div>
+        
+             <div class="block searchbar-not-found">
+        		Información no encontrada
+        	</div> 
+        	
+          </section>
+        </div><!--page-->
+        <div class="toolbar tabbar-labels toolbar-bottom-md">
+        	<div class="toolbar-inner">
+        		<a href="#" class="tab-link">
+        			<i class="material-icons">home</i>
+        			<span class="tabbar-label">Inicio</span>
+        		</a>
+        		<a href="#" class="tab-link">
+        			<i class="material-icons">lens</i>
+        			<span class="tabbar-label">Habitaciones</span>
+        		</a>
+        		<a href="#" class="tab-link">
+        			<i class="material-icons">settings</i>
+        			<span class="tabbar-label">Configuraciones</span>
+        		</a>
+        	</div>
+        </div> 
+      </div><!--view-->
+      
+       <section id="popup-login" class="popup modal-in">
+      	<div class="page">
+      		
+      		<div class="page-content login-screen-content">
+      			
+      			<div class="block-title text-align-center">
+      				<img src="img/logo.png" class="img-responsive">
+      			</div>
+      			
+      			<form id="form-login">
+      				<div class="list">
+      					<ul>
+      						 <li class="item-content item-input">
+      						    <div class="item-media">
+      						    	<i  class="material-icons">account_circle</i>
+      						    </div> 
+      						 	<div class="item-inner">
+      						 		
+      						 		<div class="item-input-wrap">
+      						 			<input type="text" id="usuario" name="usuario" required validate placeholder="Ingrese su nombre completo ">
+      						 			
+      						 		</div>
+      						 	</div>
+      						 </li>
+      						 <li class="item-content item-input">
+      						 <div class="item-media">
+      						    	<i  class="material-icons">lock</i>
+      						    </div> 
+      						 	<div class="item-inner">
+      						 		
+      						 		<div class="item-input-wrap">
+      						 			<input type="password" id="password"  name="password" required validate placeholder="Ingrese su Contraseña">
+      						 			
+      						 		</div>
+      						 	</div>
+      						 </li>
+      					</ul>
+      				</div>
+      				
+      				<div class="block">
+      				<p><a id="btn-login" href="#" class="button button-fill button-round">Ingresa</a></p>
+      				<p><a  id="btn-registro" href="#" class="button button-fill button-round button-border popup-open" data-popup="#popup-registro">Registrar</a></p>	
+      				</div>
+      				
+      			</form>
+      			
+      		</div>
+      		
+      	</div>
+       </section>
+       
+       <section id="popup-registro" class="popup">
+       	 <div class="page">
+       	 	<div class="page-content login-screen-content">
+       	 		<div class="block-titulo">
+       	 			Registro
+       	 		</div>
+       	 		<form id="form-registro">
+       	 			 <div class="block-title">
+       	 			 	Información Básica
+       	 			 </div>
+       	 			 <div class="list">
+       	 			 	<ul>
+       	 			 		<li class="item-content item-input">
+       	 			 		<div class="item-inner">
+       	 			 			<div class="item-input-wrap">
+       	 			 				<input type="text" id="nombre" name="nombre" requiered validate placeholder="Ingrese su nombre">
+       	 			 				
+       	 			 			</div>
+       	 			 		</div>
+       	 			 			
+       	 			 		</li>
+       	 			 		<li class="item-content item-input">
+       	 			 		<div class="item-inner">
+       	 			 			<div class="item-input-wrap">
+       	 			 				<input type="email" id="correo" name="correo" requiered validate placeholder="Ingrese su correo">
+       	 			 				
+       	 			 			</div>
+       	 			 		</div>
+       	 			 			
+       	 			 		</li>
+       	 			 	</ul>
+       	 			 </div>
+       	 		
+      	 			 	<div class="block-title">
+       	 			 	Información Privada
+       	 			 </div>
+       	 			 <div class="list">
+       	 			 	<ul>
+       	 			 		<li class="item-content item-input">
+       	 			 		<div class="item-inner">
+       	 			 			<div class="item-input-wrap">
+       	 			 				<input type="password" id="password-registro" name="password" requiered validate placeholder="Ingrese su contraseña">
+       	 			 				
+       	 			 			</div>
+       	 			 		</div>
+       	 			 			
+       	 			 		</li>
+       	 			 		<li class="item-content item-input">
+       	 			 		<div class="item-inner">
+       	 			 			<div class="item-input-wrap">
+       	 			 				<input type="tel" id="telefono" name="teelefono" requiered validate placeholder="Ingrese su celular">
+       	 			 				
+       	 			 			</div>
+       	 			 		</div>
+       	 			 			
+       	 			 		</li>
+       	 			 	</ul>
+       	 			 </div>
+      	 		    
+       	 		    <div class="block">
+       	 		    	<p><a href="#" class="button button-fill button-round">Resgistrarme</a></p>
+       	 		    	<p class="text-align-center"><a href="#" class="link close-registro">Cancelar</a></p>
+       	 		    </div>
+       	 		</form>
+       	 	</div>
+       	 </div>
+       </section>
+      
+    </div><!--app-->
+
+<script src="js/framework7.min.js"></script>
+<script src="js/my-app.js"></script>
+</body>
+</html>

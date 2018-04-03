@@ -1,0 +1,46 @@
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+}
+
+.panel-left{
+	background-color: #212121;
+	color: #BBBBBB
+}
+
+.panel-logo{
+	padding: 10px 0px;
+}
+
+.panel-left .list{
+	font-size: 14px;
+}
+
+.panel-left .list .material-icons{
+	color: #857043;
+}
+
+.panel-left .list .item-inner{
+	background: none;
+
+}
+
+.button-border{
+	border: 1px solid #000!important;
+	background-color: #fff !important;
+	color: #000 !important;
+
+}
+#popup-registro.block-titulo {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 30px 0px;
+}
+
+#popup-registro .block-title{
+	color: #000000;
+	
+}
